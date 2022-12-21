@@ -2,6 +2,10 @@
 
 個人練習範例
 
+## useWillUnmount
+
+元件在 unmount 前，設定的 function 會被呼叫。
+
 ## useDebounce
 
 沒有回傳值，利用 re-render 去觸發。

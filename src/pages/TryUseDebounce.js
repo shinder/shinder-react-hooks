@@ -4,7 +4,7 @@ import useDebounce from "./../hooks/useDebounce";
 export default function TryUseDebounce() {
   const [display, setDisplay] = useState("");
   const [val, setVal] = useState("");
-  const [a, setA] = useState(0);
+  const [, setA] = useState(0);
 
   const debouceHandler = useCallback(() => {
     setDisplay(val);

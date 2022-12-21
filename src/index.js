@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 // import App from './App';
-import TryUseDebounce2 from './pages/TryUseDebounce2'
+import TryUseWillUnmountContainer from './pages/TryUseWillUnmountContainer'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TryUseDebounce2 />
+    <TryUseWillUnmountContainer />
   </React.StrictMode>
 );
 
