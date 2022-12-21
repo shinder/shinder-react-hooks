@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import useDebounce from "./../hooks/useDebounce";
 
 export default function TryUseDebounce() {
   const [display, setDisplay] = useState("");
   const [val, setVal] = useState("");
-  useDebounce(() => {
+  const [a, setA] = useState(0);
+
+  const debouceHandler = useCallback(() => {
     setDisplay(val);
-  }, 1200);
-  console.log({val, display});
+  }, [val]);
+
+  useDebounce(debouceHandler, 1200);
+  
+  // 測試 沒有使用 useCallback 時，useDebounce 的問題
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setA((v) => v + 1);
+    }, 500);
+    return () => clearInterval(intervalId);
+  }, []);
+  
+  console.log({ val, display });
   return (
     <div className="container">
       <div className="row">
