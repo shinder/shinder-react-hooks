@@ -1,5 +1,5 @@
 import React from "react";
-import LifeCycle01Child01 from "./LifeCycle01Child01";
+import LifeCycle01Child01 from "../components/LifeCycle01Child01";
 
 export default function LifeCycle01() {
   return (
