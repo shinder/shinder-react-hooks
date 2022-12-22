@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useState } from "react";
 import TryUseWillUnmount from "./TryUseWillUnmount";
 
 export default function TryUseWillUnmountContainer() {

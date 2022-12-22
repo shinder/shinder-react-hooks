@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import useDebounce from "./../hooks/useDebounce";
 import useWillUnmount from "./../hooks/useWillUnmount";
 import useLocalStorageJson from "./../hooks/useLocalStorageJson";
@@ -10,7 +10,7 @@ export default function TryUseWillUnmount() {
   const debouceHandler = useCallback(() => {
     console.log({val})
     setDisplay(val);
-  }, [val]);
+  }, [val, setDisplay]);
 
   useDebounce(debouceHandler, 2000);
   useWillUnmount(debouceHandler);
