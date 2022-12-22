@@ -10,3 +10,16 @@ export default function useWillUnmount(fn) {
     };
   }, []);
 }
+
+/*
+// 另一個版本，fn 必須是使用 useCallback 的函式才行
+
+export default function useWillUnmount(fn) {
+  useEffect(() => {
+    return () => {
+      fn()
+    };
+  }, [fn]);
+}
+
+*/
