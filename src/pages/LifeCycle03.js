@@ -1,7 +1,7 @@
 import { useState } from "react";
-import LifeCycle02Child01 from "../components/LifeCycle02Child01";
+import LifeCycle03Child01 from "../components/LifeCycle03Child01";
 
-export default function LifeCycle02() {
+export default function LifeCycle03() {
   const [show, setShow] = useState(true);
 
   return (
@@ -15,14 +15,12 @@ export default function LifeCycle02() {
               setShow(!show);
             }}
           >
-            LifeCycle02 Toggle Child
+            LifeCycle03 Toggle Child
           </button>
         </div>
       </div>
       <div className="row">
-        <div className="col-6">
-          <LifeCycle02Child01 />
-        </div>
+        <div className="col-6">{show && <LifeCycle03Child01 />}</div>
       </div>
     </div>
   );

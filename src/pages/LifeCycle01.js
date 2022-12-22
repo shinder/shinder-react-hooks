@@ -6,7 +6,7 @@ export default function LifeCycle01() {
     <div className="container">
       <div className="row">
         <div className="col">
-          <button className="btn btn-primary">Toggle Child</button>
+          <button className="btn btn-primary">LifeCycle01</button>
         </div>
       </div>
       <div className="row">

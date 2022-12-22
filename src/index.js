@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import LifeCycle02 from './pages/LifeCycle02';
+import LifeCycle03 from './pages/LifeCycle03';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <LifeCycle02 />
+    <LifeCycle03 />
 );

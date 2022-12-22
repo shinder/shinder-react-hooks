@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function LifeCycle02Child01() {
+export default function LifeCycle03Child01() {
   const [count, setCount] = useState(0);
   console.log(`元件內一般敘述 A`);
 
@@ -45,7 +45,8 @@ export default function LifeCycle02Child01() {
 }
 
 /*
-// *** 元件沒有 unmount 的情況，但父元件狀態有變更 ***
+// *** 元件有 unmount 的情況 ***
+// *** unmount 再 mount 元件內的 state 會回復初始狀況 ***
 
 元件內一般敘述 A
 元件內一般敘述 E
@@ -60,13 +61,13 @@ useEffect 相依 count : D XXX
 useEffect 第二參數為 undefined: B OOO
 useEffect 相依 count : D OOO
 === 點擊 Toggle Child ===
-元件內一般敘述 A
-元件內一般敘述 E
 useEffect 第二參數為 undefined: B XXX
-useEffect 第二參數為 undefined: B OOO
+useEffect 無相依: C XXX
+useEffect 相依 count : D XXX
 === 點擊 Toggle Child ===
 元件內一般敘述 A
 元件內一般敘述 E
-useEffect 第二參數為 undefined: B XXX
 useEffect 第二參數為 undefined: B OOO
+useEffect 無相依: C OOO
+useEffect 相依 count : D OOO
 */
