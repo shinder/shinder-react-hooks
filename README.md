@@ -2,6 +2,10 @@
 
 個人練習範例
 
+## useIsMounted
+
+在元件中判斷是否在掛載的狀態
+
 ## useWillUnmount
 
 元件在 unmount 前，設定的 function 會被呼叫。

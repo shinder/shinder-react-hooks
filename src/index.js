@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import TryUseIsMounted from "./pages/TryUseIsMounted";
+import TryUseWillUnmount from "./pages/TryUseWillUnmount";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<TryUseIsMounted />);
+root.render(<TryUseWillUnmount />);
