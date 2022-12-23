@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import LifeCycle05 from "./pages/LifeCycle05";
+import TryUsePractice01 from "./pages/TryUsePractice01";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<LifeCycle05 />);
+root.render(<TryUsePractice01 />);
