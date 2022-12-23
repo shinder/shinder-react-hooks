@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import TryUseWillUnmount from "./pages/TryUseWillUnmount";
+import PreviousState from "./pages/PreviousState";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<TryUseWillUnmount />);
+root.render(<PreviousState />);
