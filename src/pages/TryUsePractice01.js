@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import usePractice01 from "../hooks/usePractice01";
 
 export default function TryUsePractice01() {

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import TryUsePractice01 from "./pages/TryUsePractice01";
+import NavbarElement01 from "./pages/NavbarElement01";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<TryUsePractice01 />);
+root.render(<NavbarElement01 />);
