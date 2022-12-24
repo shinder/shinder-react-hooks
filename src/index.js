@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import NavbarElement01 from "./pages/NavbarElement01";
+import MyPage from "./pages/TryUseLocalForage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<NavbarElement01 />);
+root.render(<MyPage />);
