@@ -1,7 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
 import useLocalForage from "./../hooks/useLocalForage";
-import useDebounce from './../hooks/useDebounce';
-import useWillUnmount from './../hooks/useWillUnmount';
 
 export default function TryUseLocalForage() {
   const initValue = {
