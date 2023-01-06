@@ -11,7 +11,7 @@ export default function NavbarElement01Navbar({barName=null}) {
   let item = "";
   if (path.length >= 2) item = path[1];
   useEffect(() => {
-    console.log(`${barName} will mount OOO`);
+    console.log(`${barName} is mounted OOO`);
     return () => {
       console.log(`${barName} will unmount XXX`);
     };
